@@ -264,3 +264,4 @@ fabric.properties
 
 # slides dataset
 !/slides/**/*.png
+!/figure/**/*.png

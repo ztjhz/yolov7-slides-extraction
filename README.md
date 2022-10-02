@@ -209,6 +209,27 @@ See [instance.ipynb](https://github.com/WongKinYiu/yolov7/blob/main/tools/instan
 </div>
 
 
+## Slides detection
+
+Training:
+
+```sh
+python train.py --workers 8 --device 0 --batch-size 32 --data data/slides.yaml --img 640 640 --cfg cfg/training/yolov7-slides.yaml --weights '' --name slides --hyp data/hyp.scratch.p5.yaml
+```
+
+Detection:
+
+```sh
+python detect.py --weights runs/train/slides/weights/best.pt --source target.png --device 0 --save-txt
+```
+
+<div align="center">
+    <a href="./">
+        <img src="./figure/slides-000151.png" width="39%"/>
+    </a>
+</div>
+
+
 ## Citation
 
 ```
