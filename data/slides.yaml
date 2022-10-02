@@ -1,0 +1,9 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./slides/images/train # 126 images
+val: ./slides/images/val # 54 images
+
+# number of classes
+nc: 4
+
+# class names
+names: ['whiteslide', 'blackboard', 'whiteboard', 'darkslide']
